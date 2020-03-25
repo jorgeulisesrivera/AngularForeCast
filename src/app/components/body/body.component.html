@@ -1,0 +1,23 @@
+<ul class="list-group">
+    <li *ngFor="let hour of foreCast" class="list-group-item">
+        <img src="http://openweathermap.org/img/w/{{hour.weather[0].icon}}.png"/>
+        {{hour.main.temp}}
+    </li>
+  </ul>
+
+
+
+<!--
+  <div class="card-columns">
+
+
+    <div class="card" *ngFor="let hour of foreCast">
+      <img src="http://openweathermap.org/img/w/{{hour.weather[0].icon}}.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{hour.main.temp}}</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+
+
+   </div>-->
